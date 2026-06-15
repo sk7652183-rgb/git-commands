@@ -187,4 +187,48 @@ Date:   Sun Jun 15 21:45:00 2026 +0530
 
 **Description:**
 
-`git log` shows the history of commits, including the commit ID, author, date, and commit message. 
+`git log` shows the history of commits, including the commit ID, author, date, and commit message.
+
+
+### `git diff`
+
+**Description:**
+
+`git diff` shows the differences between the working directory and the staging area.
+
+**Example:**
+
+Create a file:
+
+```bash
+echo "Hello Git" > file.txt
+git add file.txt
+git commit -m "Initial commit"
+```
+
+Modify the file:
+
+```bash
+echo "New line added" >> file.txt
+```
+
+Check the difference:
+
+```bash
+git diff
+```
+
+**Output:**
+
+```diff
+diff --git a/file.txt b/file.txt
+index e965047..4f2b4a1 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1,2 @@
+ Hello Git
++New line added
+```
+
+**Explanation:**
+- `+New line added` indicates a new line that exists in the working directory but has not yet been staged. 

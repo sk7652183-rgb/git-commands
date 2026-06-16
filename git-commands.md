@@ -231,4 +231,20 @@ index e965047..4f2b4a1 100644
 ```
 
 **Explanation:**
-- `+New line added` indicates a new line that exists in the working directory but has not yet been staged. 
+- `+New line added` indicates a new line that exists in the working directory but has not yet been staged.
+
+
+| Command                                             | Description                                                   |
+| --------------------------------------------------- | ------------------------------------------------------------- |
+| `git branch`                                        | Listed all local branches in the repository.                  |
+| `git branch -r`                                     | Listed all remote branches.                                   |
+| `git branch -a`                                     | Listed all local and remote branches.                         |
+| `git checkout -b feature-1`                         | Created and switched to the `feature-1` branch.               |
+| `git checkout -b feature-2`                         | Created and switched to the `feature-2` branch.               |
+| `git switch feature-1`                              | Switched to the `feature-1` branch.                           |
+| `git status`                                        | Checked the status of the working directory and staging area. |
+| `git commit -m "Added test.py for Testing purpose"` | Created a commit containing changes to `test.py`.             |
+| `git log`                                           | Displayed the commit history of the current branch.           |
+| `git switch master`                                 | Switched back to the `master` branch.                         |
+| `git branch -d feature-2`                           | Deleted the unused `feature-2` branch.                        |
+ 

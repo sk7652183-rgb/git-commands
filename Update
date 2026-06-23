@@ -1,3 +1,4 @@
+# This comment is for the Testing purpose
 function validateSettings() {
     return true;
 }

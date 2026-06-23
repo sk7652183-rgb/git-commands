@@ -1,3 +1,4 @@
+# This code is for the practice purpose 
 def main():
     print("Application started")
 

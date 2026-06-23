@@ -1,3 +1,4 @@
+# This is the code for the test purpose
 function getDashboardStats() {
     return {
         totalUsers: 100,

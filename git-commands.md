@@ -310,4 +310,44 @@ index e965047..4f2b4a1 100644
 | Commit Z | Created a commit as the latest change in history. |
 | `git revert Y` | Failed because Git requires a commit hash, not a commit message. |
 | `git revert 8829095` | Successfully reverted Commit Y using its commit hash. |
-| Verification | Confirmed that `git revert` preserves history by creating a new commit. | 
+| Verification | Confirmed that `git revert` preserves history by creating a new commit. |
+
+# Day 26 – GitHub CLI: Manage GitHub from Your Terminal
+
+## GitHub CLI Commands Practiced
+
+| Command                                                            | Description                                                                |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| `gh --version`                                                     | Display the installed GitHub CLI version.                                  |
+| `gh auth status`                                                   | Check the current GitHub authentication status.                            |
+| `gh api user --jq .login`                                          | Display the authenticated GitHub username.                                 |
+| `gh repo create github-cli-practice --public --clone --add-readme` | Create a new public GitHub repository, clone it locally, and add a README. |
+| `gh repo view github-cli-practice`                                 | View repository details.                                                   |
+| `gh repo view --web`                                               | Open the repository in a web browser.                                      |
+| `gh issue create`                                                  | Create a new GitHub issue from the terminal.                               |
+| `gh issue list`                                                    | List issues in a repository.                                               |
+| `gh issue view`                                                    | View details of a specific issue.                                          |
+| `gh issue close`                                                   | Close an issue and optionally add a comment.                               |
+| `gh pr create`                                                     | Create a pull request from a branch.                                       |
+| `gh pr status`                                                     | View pull requests associated with the current branch and account.         |
+| `gh pr list`                                                       | List pull requests in a repository.                                        |
+| `gh pr view`                                                       | View pull request details, reviews, and checks.                            |
+| `gh pr merge`                                                      | Merge a pull request from the terminal.                                    |
+| `gh run list`                                                      | List GitHub Actions workflow runs.                                         |
+| `gh run view`                                                      | View details, status, and logs of a workflow run.                          |
+| `gh workflow list`                                                 | List workflows configured in a repository.                                 |
+| `gh api`                                                           | Interact directly with GitHub REST and GraphQL APIs.                       |
+| `gh release create`                                                | Create a new GitHub release.                                               |
+| `gh release view`                                                  | View release details.                                                      |
+| `gh gist create`                                                   | Create a GitHub Gist from a file.                                          |
+| `gh gist list`                                                     | List your GitHub Gists.                                                    |
+| `gh alias set`                                                     | Create a custom shortcut for a GitHub CLI command.                         |
+| `gh alias list`                                                    | List all configured GitHub CLI aliases.                                    |
+| `gh search repos`                                                  | Search GitHub repositories from the terminal.                              |
+| `gh pr review`                                                     | Review, approve, comment on, or request changes to a pull request.         |
+| `gh pr checkout`                                                   | Check out a pull request locally for testing and review.                   |
+
+### Summary
+
+Practiced GitHub CLI commands for authentication, repository management, issue tracking, pull requests, workflow monitoring, releases, gists, aliases, API interactions, and repository search directly from the terminal.
+ 

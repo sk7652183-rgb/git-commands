@@ -85,13 +85,13 @@ This repository is built to simulate real-world DevOps workflows and strengthen 
 
 ---
 
-## 🧪 Workflow Diagram
-
-```mermaid
 flowchart LR
-A[Working Directory] --> B[Staging Area]
-B --> C[Repository]
-C --> D[GitHub Remote]
+
+A[🗂️ File System<br>Untracked File] --> B[➕ git add]
+B --> C[📦 Staging Area]
+C --> D[🧠 git commit]
+D --> E[📚 Git Repository<br>Tracked History]
+
 
 ⚙️ Example Workflow
 
